@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculator App - Perform basic arithmetic operations online">
+    <meta name="keywords" content="calculator, arithmetic, mathematics, online calculator">
+    <meta name="author" content="Zishan Rayeen">
+    <title>CALCULATOR</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="calculator.png">
+</head>
+<body>
+    
+
+<!--calculator box coding---->
+
+<header id="head-box">
+    <section id="section_box">
+
+
+<!--dark mode--->
+        <span id="dark-mde">
+            <button id="dark_btn" onclick="dark()" onpointerenter="light()"></button>
+        </span>
+<!-- end dark mode--->
+
+
+
+
+<!--calculate form btn code--->
+        
+<form >
+<!---number box code--->
+        <div id="no_box">
+            <p id="no_text"></p>
+        </div>
+<!---end number box code--->
+
+
+        <div class="type-no">
+            <input type="number" name="Frist no" id="one" placeholder="Frist No">
+            <input type="number" name="Second no" id="two" placeholder="Second No">
+        </div>
+
+
+        <span class="input-btn">
+            <div class="set"><button id="sum_btn"  onclick="return add_no()">+</button></div>
+            <div class="set"><button id="sub_btn"  onclick="return sub_no()">-</button></div>
+            <div class="set"><button id="mul_btn"  onclick="return mul_no()">*</button></div>
+            <div class="set"><button id="div_btn"  onclick="return div_no()">/</button></div>
+            <div class="set"><button id="rem_btn"  onclick="return rem_no()">%</button></div>
+            <div class="set"><button type="reset" id="close">x</button></div>
+        </span>
+
+
+        <footer class="close-now">
+            <button type="submit" id="c-btn" >C</button>
+        
+
+        <button id="leave" onclick="window.alert('Leave The App.')"><a href="https://github.com/zishanrayeen
+            " 
+            class="anchor" >Leave</a></button>
+        </footer>
+
+    </form>
+    
+<!--end calculate form btn code--->
+
+
+
+
+
+
+    </section>
+</header>
+
+<!-- end calculator box coding---->
+
+
+
+
+
+<!--js link--->
+<script src="script.js"></script>
+<!--end js link--->
+</body>
+</html>
